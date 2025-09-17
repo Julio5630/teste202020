@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Os Gigantes da Internet Brasileira</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#06b6d4;--glass: rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial; background:linear-gradient(180deg,#071226, #071b2a 60%);color:#e6eef6;line-height:1.45}
+    header{padding:28px 20px;border-bottom:1px solid rgba(255,255,255,0.03);display:flex;align-items:center;gap:18px}
+    header h1{margin:0;font-size:20px}
+    main{max-width:1100px;margin:28px auto;padding:0 18px}
+    .intro{background:var(--glass);padding:18px;border-radius:12px;margin-bottom:18px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);display:flex;gap:12px;align-items:flex-start}
+    .thumb{flex:0 0 120px;height:120px;border-radius:10px;overflow:hidden;background:#081323;display:flex;align-items:center;justify-content:center}
+    .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+    .meta{flex:1}
+    .meta h2{margin:0 0 6px 0;font-size:18px}
+    .badge{display:inline-block;font-size:12px;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.03);color:var(--muted);margin-bottom:8px}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    dl{margin:8px 0}
+    dt{font-weight:600;font-size:13px;color:#d7eaf3}
+    dd{margin:0 0 8px 0;color:var(--muted);font-size:14px}
+    footer{max-width:1100px;margin:22px auto 60px;padding:0 18px;color:var(--muted);font-size:13px}
+    /* modal */
+    .modal{position:fixed;inset:0;background:rgba(2,6,23,0.6);display:none;align-items:center;justify-content:center;padding:18px}
+    .modal .panel{background:#071322;padding:12px;border-radius:10px;max-width:900px;width:100%}
+    .modal img{max-width:100%;height:auto;border-radius:8px}
+    .close{background:none;border:0;color:var(--muted);font-size:16px;padding:8px;cursor:pointer}
+    /* small */
+    @media (max-width:420px){.thumb{height:90px;flex-basis:90px}}
+    .actions{margin-left:auto;display:flex;gap:8px}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 10px;border-radius:8px;color:var(--muted);cursor:pointer}
+  </style>
+</head>
+<body>
+  <header>
+    <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="6" fill="#0b1220"/><path d="M6 12h12M12 6v12" stroke="white" stroke-opacity="0.08" stroke-width="1.2"/></svg>
+    <div>
+      <h1>Os Gigantes da Internet Brasileira</h1>
+      <div style="color:var(--muted);font-size:13px"></div>
+    </div>
+    <div class="actions">
+  
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <strong></strong> 
+      <div style="margin-top:8px;color:var(--muted);font-size:13px"></div>
+    </section>
+
+    <section class="grid">
+
+      <!-- Whindersson -->
+      <article class="card">
+        <div class="thumb"><img data-src="data:image/jpeg;base64,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" alt="Whindersson Nunes — imagem" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23081223'/%3E%3Ctext x='50%25' y='50%25' fill='%239aa4b2' font-size='20' dominant-baseline='middle' text-anchor='middle'%3EImagem%3C/text%3E%3C/svg%3E"></div>
+        <div class="meta">
+          <h2>Whindersson Nunes <span class="badge">O Rei da Comédia</span></h2>
+          <dl>
+            <dt>Quem é?</dt>
+            <dd>O paraibano que viralizou com paródias e monólogos de humor.</dd>
+            <dt>Plataformas</dt>
+            <dd>YouTube, Instagram, X.</dd>
+            <dt>Tema Principal</dt>
+            <dd>Humor e vlogs do cotidiano, com autenticidade.</dd>
+            <dt>Fama Pré-Internet?</dt>
+            <dd>Não — carreira 100% online.</dd>
+            <dt>Outra Profissão?</dt>
+            <dd>Humorista de stand-up e também atleta amador (boxe).</dd>
+          </dl>
+        </div>
+      </article>
+
+      <!-- Felipe Neto -->
+      <article class="card">
+        <div class="thumb"><img data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfr-oBxiY3ji4OO6f7QhbT9LSQdOW8velWkw&s" alt="Felipe Neto — imagem" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23081223'/%3E%3Ctext x='50%25' y='50%25' fill='%239aa4b2' font-size='20' dominant-baseline='middle' text-anchor='middle'%3EImagem%3C/text%3E%3C/svg%3E"></div>
+        <div class="meta">
+          <h2>Felipe Neto <span class="badge">Pensador/Entretenedor</span></h2>
+          <dl>
+            <dt>Quem é?</dt>
+            <dd>Um dos pioneiros do profissionalismo no YouTube, conhecido por conteúdo diverso e opiniões fortes.</dd>
+            <dt>Plataformas</dt>
+            <dd>YouTube, TikTok, X.</dd>
+            <dt>Tema Principal</dt>
+            <dd>Vlogs, cultura pop, opiniões sobre temas sociais e políticos.</dd>
+            <dt>Fama Pré-Internet?</dt>
+            <dd>Não.</dd>
+            <dt>Outra Profissão?</dt>
+            <dd>Empresário e autor.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <!-- RezendeEvil -->
+      <article class="card">
+        <div class="thumb"><img data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZSUUiM2P9-_Xhc1qYqeN3EAqhJN7Sssd8SQ&s" alt="RezendeEvil — imagem" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23081223'/%3E%3Ctext x='50%25' y='50%25' fill='%239aa4b2' font-size='20' dominant-baseline='middle' text-anchor='middle'%3EImagem%3C/text%3E%3C/svg%3E"></div>
+        <div class="meta">
+          <h2>RezendeEvil <span class="badge">Mestre do Minecraft</span></h2>
+          <dl>
+            <dt>Quem é?</dt>
+            <dd>Um dos maiores criadores de conteúdo de games do Brasil.</dd>
+            <dt>Plataformas</dt>
+            <dd>YouTube, TikTok.</dd>
+            <dt>Tema Principal</dt>
+            <dd>Minecraft e outros games, vlogs e desafios.</dd>
+            <dt>Fama Pré-Internet?</dt>
+            <dd>Não.</dd>
+            <dt>Outra Profissão?</dt>
+            <dd>Empresário digital.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <!-- Júlio Cocielo -->
+      <article class="card">
+        <div class="thumb"><img data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF0i5t9yeVmoLgd1dsMC_8SWWjkD2uj-K1HA&s" alt="Júlio Cocielo — imagem" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23081223'/%3E%3Ctext x='50%25' y='50%25' fill='%239aa4b2' font-size='20' dominant-baseline='middle' text-anchor='middle'%3EImagem%3C/text%3E%3C/svg%3E"></div>
+        <div class="meta">
+          <h2>Júlio Cocielo <span class="badge">Humorista do Dia a Dia</span></h2>
+          <dl>
+            <dt>Quem é?</dt>
+            <dd>Começou no Vine e virou youtuber de sucesso com vídeos de comédia.</dd>
+            <dt>Plataformas</dt>
+            <dd>YouTube, Instagram, TikTok.</dd>
+            <dt>Tema Principal</dt>
+            <dd>Humor cotidiano e vlogs.</dd>
+            <dt>Fama Pré-Internet?</dt>
+            <dd>Não.</dd>
+            <dt>Outra Profissão?</dt>
+            <dd>Comediante em shows de stand-up.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <!-- Pâmela Drudi -->
+      <article class="card">
+        <div class="thumb"><img data-src="data:image/jpeg;base64,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" alt="Pâmela Drudi — imagem" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23081223'/%3E%3Ctext x='50%25' y='50%25' fill='%239aa4b2' font-size='20' dominant-baseline='middle' text-anchor='middle'%3EImagem%3C/text%3E%3C/svg%3E"></div>
+        <div class="meta">
+          <h2>Pâmela Drudi <span class="badge">Diva da Beleza</span></h2>
+          <dl>
+            <dt>Quem é?</dt>
+            <dd>Influenciadora de tutoriais de beleza e maquiagem.</dd>
+            <dt>Plataformas</dt>
+            <dd>YouTube, Instagram.</dd>
+            <dt>Tema Principal</dt>
+            <dd>Maquiagem, beleza e lifestyle.</dd>
+            <dt>Fama Pré-Internet?</dt>
+            <dd>Não.</dd>
+            <dt>Outra Profissão?</dt>
+            <dd>Empresária com marca de maquiagem.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <!-- Lucas Lira -->
+      <article class="card">
+        <div class="thumb"><img data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQK3P6DvyP4Y6mStpo76ooIt5MEGT_H9LVRg&s" alt="Lucas Lira — imagem" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23081223'/%3E%3Ctext x='50%25' y='50%25' fill='%239aa4b2' font-size='20' dominant-baseline='middle' text-anchor='middle'%3EImagem%3C/text%3E%3C/svg%3E"></div>
+        <div class="meta">
+          <h2>Lucas Lira (Invent na Hora) <span class="badge">Rei das Pegadinhas</span></h2>
+          <dl>
+            <dt>Quem é?</dt>
+            <dd>Youtuber conhecido por pegadinhas, desafios e conteúdo divertido.</dd>
+            <dt>Plataformas</dt>
+            <dd>YouTube, Instagram.</dd>
+            <dt>Tema Principal</dt>
+            <dd>Pegadinhas, desafios e vlogs.</dd>
+            <dt>Fama Pré-Internet?</dt>
+            <dd>Não.</dd>
+            <dt>Outra Profissão?</dt>
+            <dd>Empresário digital.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <!-- Virginia Fonseca -->
+      <article class="card">
+        <div class="thumb"><img data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV6O17EC5nhHbsbbBZftgXsi4b6Md92tXbWA&s" alt="Virginia Fonseca — imagem" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23081223'/%3E%3Ctext x='50%25' y='50%25' fill='%239aa4b2' font-size='20' dominant-baseline='middle' text-anchor='middle'%3EImagem%3C/text%3E%3C/svg%3E"></div>
+        <div class="meta">
+          <h2>Virginia Fonseca <span class="badge">Fenômeno do Instagram</span></h2>
+          <dl>
+            <dt>Quem é?</dt>
+            <dd>Influenciadora com enorme engajamento, foca em vida familiar e beleza.</dd>
+            <dt>Plataformas</dt>
+            <dd>Instagram, YouTube, TikTok.</dd>
+            <dt>Tema Principal</dt>
+            <dd>Vida familiar, beleza e lifestyle.</dd>
+            <dt>Fama Pré-Internet?</dt>
+            <dd>Não.</dd>
+            <dt>Outra Profissão?</dt>
+            <dd>Empresária e apresentadora.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <!-- Enaldinho -->
+      <article class="card">
+        <div class="thumb"><img data-src="data:image/jpeg;base64,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" alt="Enaldinho — imagem" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23081223'/%3E%3Ctext x='50%25' y='50%25' fill='%239aa4b2' font-size='20' dominant-baseline='middle' text-anchor='middle'%3EImagem%3C/text%3E%3C/svg%3E"></div>
+        <div class="meta">
+          <h2>Enaldinho <span class="badge">Youtuber da Família</span></h2>
+          <dl>
+            <dt>Quem é?</dt>
+            <dd>Criador focado em público jovem, conhecido por energia e desafios.</dd>
+            <dt>Plataformas</dt>
+            <dd>YouTube, TikTok, Instagram.</dd>
+            <dt>Tema Principal</dt>
+            <dd>Desafios, brincadeiras e entretenimento familiar.</dd>
+            <dt>Fama Pré-Internet?</dt>
+            <dd>Não.</dd>
+            <dt>Outra Profissão?</dt>
+            <dd>Autor e empresário.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <!-- Carlinhos Maia -->
+      <article class="card">
+        <div class="thumb"><img data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzznwg9YhDiIKgtF2MlbtRA37RhvWAlD85bA&s" alt="Carlinhos Maia — imagem" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23081223'/%3E%3Ctext x='50%25' y='50%25' fill='%239aa4b2' font-size='20' dominant-baseline='middle' text-anchor='middle'%3EImagem%3C/text%3E%3C/svg%3E"></div>
+        <div class="meta">
+          <h2>Carlinhos Maia <span class="badge">Narrador da Vida Real</span></h2>
+          <dl>
+            <dt>Quem é?</dt>
+            <dd>Famoso por mostrar a vida real de forma espontânea e engraçada.</dd>
+            <dt>Plataformas</dt>
+            <dd>Instagram, TikTok.</dd>
+            <dt>Tema Principal</dt>
+            <dd>Vlogs do dia a dia, humor e conteúdo no estilo reality.</dd>
+            <dt>Fama Pré-Internet?</dt>
+            <dd>Não.</dd>
+            <dt>Outra Profissão?</dt>
+            <dd>Empresário e figura na TV.</dd>
+          </dl>
+        </div>
+      </article>
+
+      <!-- Camila Loures -->
+      <article class="card">
+        <div class="thumb"><img data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4VfBCxlR4HLm1z9EmZeQpa-3M9r1CgqYpfA&s" alt="Camila Loures — imagem" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23081223'/%3E%3Ctext x='50%25' y='50%25' fill='%239aa4b2' font-size='20' dominant-baseline='middle' text-anchor='middle'%3EImagem%3C/text%3E%3C/svg%3E"></div>
+        <div class="meta">
+          <h2>Camila Loures <span class="badge">Rainha do Vlog Diário</span></h2>
+          <dl>
+            <dt>Quem é?</dt>
+            <dd>Youtuber conhecida por vlogs, desafios e rotina online.</dd>
+            <dt>Plataformas</dt>
+            <dd>YouTube, TikTok, Instagram.</dd>
+            <dt>Tema Principal</dt>
+            <dd>Vlogs, desafios e cotidiano.</dd>
+            <dt>Fama Pré-Internet?</dt>
+            <dd>Não.</dd>
+            <dt>Outra Profissão?</dt>
+            <dd>Apresentadora de TV e empresária.</dd>
+          </dl>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    
+  </footer>
+
+  <!-- hidden download link to trigger download of the HTML file (works when hosted) -->
+  <a id="downloadLink" href="#" download="10_gigantes_internet_brasil.html" style="display:none"></a>
+
+  <div id="modal" class="modal" onclick="closeModal(event)">
+    <div class="panel" role="dialog" aria-modal="true">
+      <button class="close" onclick="closeModal(event)">Fechar ×</button>
+      <div id="modalContent" style="margin-top:8px"></div>
+    </div>
+  </div>
+
+  <script>
+    // lazy load images and enable modal view
+    document.addEventListener('DOMContentLoaded', ()=>{
+      document.querySelectorAll('.thumb img').forEach(img=>{
+        const ds = img.getAttribute('data-src');
+        if(ds){ img.src = ds }
+        img.addEventListener('click', (e)=>{ openModal(img.src, img.alt) })
+      })
+    })
+    function openModal(src, alt){
+      const modal = document.getElementById('modal');
+      const content = document.getElementById('modalContent');
+      content.innerHTML = '<img src="'+src+'" alt="'+(alt||'imagem')+'">';
+      modal.style.display = 'flex';
+    }
+    function closeModal(e){ if(e.target.id==='modal' || e.target.classList.contains('close')) document.getElementById('modal').style.display='none' }
+  </script>
+</body>
+</html>
